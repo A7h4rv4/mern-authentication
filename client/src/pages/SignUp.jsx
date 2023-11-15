@@ -21,6 +21,7 @@ export default function SignUp() {
         },
         body: JSON.stringify(formdata),
       });
+      console.log("user created successfully");
       const data = await res.json();
       setLoading(false);
       if (data.success === false) {
