@@ -6,6 +6,7 @@ import {
   signInFailure,
 } from "../redux/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
+import OAuth from "../Components/OAuth";
 
 export default function SignIn() {
   const [formdata, setFormdata] = useState({});
@@ -65,6 +66,7 @@ export default function SignIn() {
         >
           {loading ? "Loading..." : "SignIn"}
         </button>
+        <OAuth />
       </form>
       <p className="mt-5">
         Dont have an account?
